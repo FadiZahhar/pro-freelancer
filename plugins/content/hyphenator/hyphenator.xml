@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>PLG_CONTENT_HYPHENATOR</name>
+	<author>artd webdesign</author>
+	<creationDate>March 2013</creationDate>
+	<copyright>Copyright (C) 2013 artd webdesign. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>felix.griewald@artd.ch</authorEmail>
+	<authorUrl>www.artd.ch</authorUrl>
+	<version>1.0</version>
+	<description>PLG_CONTENT_HYPHENATOR_DESC</description>
+	<files>
+		<filename plugin="hyphenator">hyphenator.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_hyphenator.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_hyphenator.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_content_hyphenator.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_content_hyphenator.sys.ini</language>
+	</languages>
+	<media folder="media" destination="plg_content_hyphenator">
+    	<folder>js</folder>
+  	</media>
+	<config>
+	    <fields name="params">
+		    <fieldset name="basic">
+		    	<field name="classname" type="text" default="" label="PLG_CONTENT_HYPHENATOR_CLASSNAME_LABEL" description="PLG_CONTENT_HYPHENATOR_CLASSNAME_DESC" />
+		    	<field name="donthyphenateclassname" type="text" default="" label="PLG_CONTENT_HYPHENATOR_DONTHYPHENATECLASSNAME_LABEL" description="PLG_CONTENT_HYPHENATOR_DONTHYPHENATECLASSNAME_DESC" />
+		    	<field name="minwordlength" type="text" filter="integer" default="" label="PLG_CONTENT_HYPHENATOR_MINWORDLENGTH_LABEL" description="PLG_CONTENT_HYPHENATOR_MINWORDLENGTH_DESC" />
+		    	<field name="hyphenchar" type="text" default="" label="PLG_CONTENT_HYPHENATOR_HYPHENCHAR_LABEL" description="PLG_CONTENT_HYPHENATOR_HYPHENCHAR_DESC" />
+		    	<field name="urlhyphenchar" type="text" default="" label="PLG_CONTENT_HYPHENATOR_URLHYPHENCHAR_LABEL" description="PLG_CONTENT_HYPHENATOR_URLHYPHENCHAR_DESC" />
+		    	<field name="togglebox" type="textarea" rows="5" cols="25" filter="raw" default="" label="PLG_CONTENT_HYPHENATOR_TOGGLEBOX_LABEL" description="PLG_CONTENT_HYPHENATOR_TOGGLEBOX_DESC" />
+		    	<field name="displaytogglebox" type="list" default="" label="PLG_CONTENT_HYPHENATOR_DISPLAYTOGGLEBOX_LABEL" description="PLG_CONTENT_HYPHENATOR_DISPLAYTOGGLEBOX_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="remoteloading" type="list" default="" label="PLG_CONTENT_HYPHENATOR_REMOTELOADING_LABEL" description="PLG_CONTENT_HYPHENATOR_REMOTELOADING_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="enablecache" type="list" default="" label="PLG_CONTENT_HYPHENATOR_ENABLECACHE_LABEL" description="PLG_CONTENT_HYPHENATOR_ENABLECACHE_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="enablereducedpatternset" type="list" default="" label="PLG_CONTENT_HYPHENATOR_ENABLEREDUCEDPATTERNSET_LABEL" description="PLG_CONTENT_HYPHENATOR_ENABLEREDUCEDPATTERNSET_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="onhyphenationdonecallback" type="textarea" rows="5" cols="25" filter="raw" default="" label="PLG_CONTENT_HYPHENATOR_ONHYPHENATIONDONECALLBACK_LABEL" description="PLG_CONTENT_HYPHENATOR_ONHYPHENATIONDONECALLBACK_DESC" />
+		    	<field name="onerrorhandler" type="textarea" rows="5" cols="25" filter="raw" default="" label="PLG_CONTENT_HYPHENATOR_ONERRORHANDLER_LABEL" description="PLG_CONTENT_HYPHENATOR_ONERRORHANDLER_DESC" />
+		    	<field name="intermediatestate" type="list" default="" label="PLG_CONTENT_HYPHENATOR_INTERMEDIATESTATE_LABEL" description="PLG_CONTENT_HYPHENATOR_INTERMEDIATESTATE_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="hidden">PLG_CONTENT_HYPHENATOR_OPTION_HIDDEN</option>
+		    		<option value="visible">PLG_CONTENT_HYPHENATOR_OPTION_VISIBLE</option>
+		   		</field>
+		    	<field name="selectorfunction" type="textarea" rows="5" cols="25" filter="raw" default="" label="PLG_CONTENT_HYPHENATOR_SELECTORFUNCTION_LABEL" description="PLG_CONTENT_HYPHENATOR_SELECTORFUNCTION_DESC" />
+		    	<field name="safecopy" type="list" default="" label="PLG_CONTENT_HYPHENATOR_SAFECOPY_LABEL" description="PLG_CONTENT_HYPHENATOR_SAFECOPY_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="doframes" type="list" default="" label="PLG_CONTENT_HYPHENATOR_DOFRAMES_LABEL" description="PLG_CONTENT_HYPHENATOR_DOFRAMES_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="storagetype" type="list" default="" label="PLG_CONTENT_HYPHENATOR_STORAGETYPE_LABEL" description="PLG_CONTENT_HYPHENATOR_STORAGETYPE_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="local">PLG_CONTENT_HYPHENATOR_OPTION_LOCAL</option>
+		    		<option value="session">PLG_CONTENT_HYPHENATOR_OPTION_SESSION</option>
+		    		<option value="none">PLG_CONTENT_HYPHENATOR_OPTION_NONE</option>
+		    	</field>
+		    	<field name="orphancontrol" type="list" default="" label="PLG_CONTENT_HYPHENATOR_ORPHANCONTROL_LABEL" description="PLG_CONTENT_HYPHENATOR_ORPHANCONTROL_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="1">PLG_CONTENT_HYPHENATOR_ORPHANCONTROL_OPTION_1</option>
+		    		<option value="2">PLG_CONTENT_HYPHENATOR_ORPHANCONTROL_OPTION_2</option>
+		    		<option value="3">PLG_CONTENT_HYPHENATOR_ORPHANCONTROL_OPTION_3</option>
+		    	</field>
+		    	<field name="dohyphenation" type="list" default="" label="PLG_CONTENT_HYPHENATOR_DOHYPHENATION_LABEL" description="PLG_CONTENT_HYPHENATOR_DOHYPHENATION_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="persistentconfig" type="list" default="" label="PLG_CONTENT_HYPHENATOR_PERSISTENTCONFIG_LABEL" description="PLG_CONTENT_HYPHENATOR_PERSISTENTCONFIG_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="defaultlanguage" type="text" default="" label="PLG_CONTENT_HYPHENATOR_DEFAULTLANGUAGE_LABEL" description="PLG_CONTENT_HYPHENATOR_DEFAULTLANGUAGE_DESC" />
+		    	<field name="useCSS3hyphenation" type="list" default="" label="PLG_CONTENT_HYPHENATOR_USECSS3HYPHENATION_LABEL" description="PLG_CONTENT_HYPHENATOR_USECSS3HYPHENATION_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="true">PLG_CONTENT_HYPHENATOR_OPTION_ENABLED</option>
+		    		<option value="false">PLG_CONTENT_HYPHENATOR_OPTION_DISABLED</option>
+		    	</field>
+		    	<field name="unhide" type="list" default="" label="PLG_CONTENT_HYPHENATOR_UNHIDE_LABEL" description="PLG_CONTENT_HYPHENATOR_UNHIDE_DESC">
+		    		<option value="">PLG_CONTENT_HYPHENATOR_OPTION_DEFAULT</option>
+		    		<option value="wait">PLG_CONTENT_HYPHENATOR_OPTION_WAIT</option>
+		    		<option value="progressive">PLG_CONTENT_HYPHENATOR_OPTION_PROGRESSIVE</option>
+		    	</field>
+		    </fieldset>
+	    </fields>
+    </config>
+</extension>

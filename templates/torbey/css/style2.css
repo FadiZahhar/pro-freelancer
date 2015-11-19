@@ -1,0 +1,42 @@
+
+p{
+	margin:0 0 20px 0;
+}
+hr{
+	height:0; 
+	border:none; 
+	border-bottom:1px solid rgba(255,255,255,0.2); 
+	border-top:1px solid rgba(0,0,0,0.9); 
+	margin:19px 0; 
+	clear:both;
+}
+#page{
+	height:393px;
+	font-size:14px!important;
+}
+.content{
+	width:111%; 
+	height:100%; 
+	overflow:auto;
+}
+.content p:nth-child(even){
+	color:#ccc; 
+	font-family:Georgia,serif; 
+	font-size:17px; 
+	font-style:italic;
+}
+.content p:nth-child(3n+0){
+	color:#c96;
+}
+
+#page2 {
+	height:60%;	
+}
+.content2{
+	position:relative;
+	margin-left:600px;
+	top:110px;
+	width:320px; 
+	height:250px;; 
+	overflow:auto;
+}

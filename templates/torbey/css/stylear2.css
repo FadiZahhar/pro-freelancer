@@ -1,0 +1,15 @@
+div#people div.box div.text {
+width: 95px;
+height: 50px;
+float: left;
+font-family: "Egy505Lt", verdana, helvetica, sans-serif;
+font-size: 14px;
+color: #686868;
+margin-top: -75px;
+margin-left: 95px;
+}
+
+div#people div.box div.text div.title {
+width: 100px!important;
+margin-left: 0px!important;
+}

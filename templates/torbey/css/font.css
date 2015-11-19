@@ -1,0 +1,195 @@
+@font-face {
+ font-family: "MyCustomFont";
+ src: url("../font/Egy505Lt.eot");
+}
+@font-face {
+ font-family: "MyCustomFont";
+ src: url("../font/Egyptian505BoldBT.ttf") /* TTF file for CSS3 browsers */
+}
+
+@font-face {  
+
+  font-family: "Egyptian505BoldBT";  
+
+  src: url( ../font/Egyptian505BoldBT.eot ); /* IE */  
+
+  src: local(" real FontName "), url(../font/Egyptian505BoldBT.ttf ) format("truetype"); /* non-IE */  
+
+}
+
+
+
+@font-face {  
+
+  font-family: "Egyptian505BT";  
+
+  src: url( ../font/Egyptian505BTRoman.eot ); /* IE */  
+
+  src: local(" real FontName "), url(../font/Egyptian505BTRoman.ttf ) format("truetype"); /* non-IE */  
+
+}
+
+
+
+@font-face {  
+
+  font-family: "Egyptian505MdBTMedium";  
+
+  src: url( ../font/Egyptian505MdBTMedium.eot ); /* IE */  
+
+  src: local(" real FontName "), url(../font/Egyptian505MdBTMedium.ttf ) format("truetype"); /* non-IE */  
+
+} 
+
+
+
+@font-face {  
+
+  font-family: "Egy710Rg";  
+
+  src: url( ../font/Egy710Rg.eot ); /* IE */  
+
+  src: local(" real FontName "), url(../font/Egy710Rg.ttf ) format("truetype"); /* non-IE */  
+
+} 
+
+
+
+@font-face {  
+
+  font-family: "Egy505Lt";  
+
+  src: url( ../font/Egy505Lt.eot ); /* IE */  
+
+  src: local(" real FontName "), url(../font/Egy505Lt.ttf ) format("truetype"); /* non-IE */  
+
+} 
+
+
+
+@font-face {  
+
+  font-family: "myriadproregular";  
+
+  src: url( ../font/myriadproregular.eot ); /* IE */  
+
+  src: local(" real FontName "), url(../font/myriadproregular.ttf ) format("truetype"); /* non-IE */  
+
+} 
+
+ 
+
+ 
+
+/* THEN use like you would any other font */  
+
+.Egyptian505BT { 
+
+font-family:"Egyptian505BT", verdana, helvetica, sans-serif; 
+
+font-size:14px;
+
+color:#6f7072;
+
+} 
+
+
+
+.Egyptian505BoldBT { 
+
+font-family:"Egyptian505BoldBT", verdana, helvetica, sans-serif; 
+
+font-size:14px;
+
+color:#6f7072;
+
+} 
+
+
+
+.Egyptian505MdBTMedium { 
+
+font-family:"Egyptian505MdBTMedium", verdana, helvetica, sans-serif; 
+
+font-size:14px;
+
+color:#6f7072;
+
+}
+
+
+
+.Egy710Rg { 
+
+font-family:"Egy710Rg", verdana, helvetica, sans-serif; 
+
+font-size:14px;
+
+color:#6f7072;
+
+}
+
+
+
+.Egy505Lt { 
+
+font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+
+font-size:14px;
+
+color:#6f7072;
+
+}
+
+
+
+.myriadproregular { 
+
+font-family:"myriadproregular", verdana, helvetica, sans-serif; 
+
+font-size:15px;
+
+color:#808285!important;
+
+}
+
+
+
+span.active {
+
+
+
+font-size:15px;
+
+color:#801214!important;
+
+font-weight:normal;	
+
+}
+
+
+
+span.myriadproregular:hover {
+
+color:#801214!important;	
+
+}
+
+
+
+
+
+
+div.spacer15px {
+
+	height:15px;	
+
+}
+
+
+
+div.spacer23px {
+
+	height:23px;
+
+}

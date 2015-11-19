@@ -1,0 +1,978 @@
+html {
+	
+}
+
+body {
+	overflow:auto;
+}
+
+div#main {
+	width:895px;
+	height:700px;
+	margin:0 auto;	
+}
+
+div#header {
+	width:100%;
+	height:105px;
+	background-image:url(../images/header.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+div#logo {
+	width:230px;
+	height:105px;
+	float:left;
+	cursor:pointer;
+}
+
+div#header ul {
+	width:auto;
+	height:17px;
+	list-style:none;
+	font-family:"Egyptian505MdBTMedium", verdana, helvetica, sans-serif; 
+	font-size:12px;
+	float:right;
+	margin-top:77px;
+	margin-right:15px;
+	
+}
+
+div#header li {
+	float:left;
+	padding-left:8px;
+	padding-right:8px;
+	cursor:pointer;
+	border-right:1px solid #a4a4a6;
+	color:#a4a4a6;
+
+}
+
+div#header li:last-child {
+	border:none;	
+}
+
+div#header li:hover , div#header li.active {
+	color:#801214;
+}
+
+
+div#menu {
+	width:100%;
+	height:53px;
+	float:right;
+	margin-right:5px;
+}
+
+div#menu ul {
+	list-style:none;
+	float:right;
+	width:auto;
+}
+
+div#menu li {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	font-size:15px;
+	color:#686868;
+	padding-left:9px;
+	padding-right:9px;
+	border-right:1px solid #a4a4a6;
+
+	float:left;
+	cursor:pointer;
+}
+
+div#menu li:hover span {
+	color:#882224;	
+}
+
+span.first {
+	color:#882224;
+}
+
+div#menu li:hover {
+color:#882224!important;	
+}
+
+div#menu ul li.active {
+	font-family: "Egyptian505MdBTMedium", verdana, helvetica, sans-serif;
+	color:#882224!important;	
+}
+
+div#menu li:last-child {
+	border:none;
+}
+
+div#home {
+	margin-top:93px;
+	width:100%;
+	height:470px;
+	background-repeat:no-repeat;
+}
+
+div#home div.left {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#831317;
+	font-size:12px;
+	background-color:#c9c9c9;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	float:left;
+	width:539px;
+	height:96px;
+	margin-top:335px;
+}
+
+div#home div.left div.title {
+	font-size:20px;
+	margin-left:20px;
+		padding-top:12px;
+}
+
+div#home div.left div.content {
+	font-size:20px;
+	margin-left:20px;
+	margin-top:5px;
+	font-size:12px;
+	width:500px;
+	text-align:justify;
+}
+
+div#home div.right {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#ffffff;
+	font-size:12px;
+	background-color:#9c5557;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	width:324px;
+	height:96px;
+	float:right;
+	margin-top:335px;
+	padding-right:10px;
+}
+div#home div.right div.title {
+	font-family:"Egyptian505BT", verdana, helvetica, sans-serif; 
+font-size:16px;
+color:#FFF;
+	margin-left:15px;
+
+		padding-top:12px;
+}
+
+div#home div.right div.content {
+	font-size:20px;
+	margin-left:15px;
+	font-size:12px;
+	width:280px;
+	text-align:justify;
+}
+
+div#home div.right div.content span {
+color:#ffffff;
+display:inline;
+}
+
+div.copyright {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	color:#686868;
+	float:right;
+	text-align:justify;
+	width:300px;
+	height:23px;
+	top:640px;
+	background-image:url(../images/copyhome.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	cursor:pointer;
+
+}
+
+div.copyrightinside {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	color:#868789;
+	float:686868;
+	text-align:justify;
+	width:300px;
+	height:23px;
+	position:absolute;
+	top:647px;
+	margin-left:25px;
+	background-image:url(../images/copyinside.png);
+	background-repeat:no-repeat;
+	background-position:top;
+	cursor:pointer;
+
+}
+
+
+
+
+div#content {
+	width:100%;
+	height:511px;
+}
+
+div#content div#left {
+	width:230px;
+	float:left;
+	margin-right:17px;
+		
+}
+
+div.imgbox{
+	width:224px;
+	height:483px;
+}
+
+div.imgbox img {
+	width:224px!important;
+	height:483px!important;
+	border:1px solid #c6c5c6;
+}
+
+div#content div#middle {
+	float:left;
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	font-size:13px;
+	color:#686868;
+	width:322px;
+	height:426px!important;
+	margin-top:80px;
+	margin-right:17px;
+	text-align:justify;
+		
+}
+
+div#middle ul {
+	list-style:outside!important;
+	margin-left:-27px!important;
+}
+
+div#content div#right {
+	width:300px;
+	float:left;	
+}
+
+div#rightmenu {
+	font-family:"Egyptian505MdBTMedium", verdana, helvetica, sans-serif; 
+	color:#686868;
+	width:100%;
+	/*border-left:1px solid #a24e51!important;*/
+	margin-top:60px;
+	position:absolute;
+	
+}
+
+.margin11 {
+	margin-left:11px;	
+}
+
+div#rightmenu div.maintitle {
+	margin-left:15px;
+
+	cursor:pointer;
+	font-size:13px;
+}
+
+
+div#rightmenu div.title {
+	margin-left:15px;
+
+	cursor:pointer;
+	font-size: 13px;
+}
+
+div#rightmenu  div.active {
+	color:#831317;	
+}
+
+div#rightmenu div.title:hover, div#rightmenu div.title .active {
+	color:#882224!important;	
+}
+
+div#rightmenu ul {
+	list-style-type:none;
+	margin-left:-30px;
+	margin-top:0px;
+	margin-bottom:40px;
+
+}
+
+div#rightmenu li {
+	float:left;
+	padding-left:6px;
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	font-size:12px;
+	color:#686868;
+	cursor:pointer;
+}
+
+div#rightmenu li:last-child span.seperator2 {
+	display:none;	
+}
+
+div#rightmenu ul.insidemenu li:first-child {
+	margin-top:20px;	
+}
+
+div#rightmenu ul.insidemenu li:last-child {
+	padding-bottom:30px;	
+}
+
+div#rightmenu li:hover , div#rightmenu li.active {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#831317;
+}
+
+div#rightmenu li:last-child {
+	border:none;
+}
+
+
+ul.insidemenu {
+
+}
+
+ul.insidemenu li {
+	clear:both!important;
+	padding:none!important;
+	padding-left:15px!important;
+	border:none!important;
+	font-family:"Egyptian505MdBTMedium", verdana, helvetica, sans-serif!important; 
+	font-size:12px!important;
+	color:#686868;
+	cursor:pointer;
+	/*border-left:1px solid #a24e51!important;*/
+	width:100%;
+}
+
+ul.insidemenu li:hover , ul.insidemenu li.active {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#a24e51;
+}
+
+ul.insidemenu li:last-child {
+	border:none;
+}
+
+div#redbox {
+font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#f5f5f6;
+	font-size:20px;
+	background-color:#831317;
+	width:311px;
+	height:88px;
+	margin-top:100px;
+	padding-left:15px;
+	padding-top:15px;
+	position:absolute;
+	top:440px;
+	margin-left:15px;
+}
+
+div#redbox2 {
+font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#f5f5f6;
+	font-size:20px;
+	background-color:#831317;
+	width:311px;
+	height:88px;
+	margin-top:100px;
+	padding-left:15px;
+	padding-top:15px;
+	position:absolute;
+	top:440px;
+	margin-left:25px;
+}
+
+div#greybox {
+font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#f5f5f6;
+	font-size:16px;
+	width:311px;
+	height:88px;
+	margin-top:100px;
+	padding-left:15px;
+	padding-top:15px;
+	position:absolute;
+	top:440px;
+	margin-left:15px;
+}
+
+.displaynone {
+	display:none;	
+}
+
+.visiblenone {
+	visibility:hidden;
+}
+
+
+/* people section */
+
+div#people 
+{
+	
+}
+
+div#people div.box {
+	float:left;
+	width: 219px;
+	height:118px;
+	border-left:1px solid #c1898b;
+	margin-bottom:16px;
+	cursor:pointer;
+}
+
+div#people div.box div.boximg {
+	width:70px;
+	height:90px;
+	background-color:#858688;
+	margin-left:14px;
+	margin-top:15px;
+	float:left;
+}
+
+div.boximg img {
+		width:100px;
+	height:120px;
+}
+
+div#people div.box div.text {
+	width:95px;
+	height:50px;
+	float:left;
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	font-size:10px;
+	color:#686868;
+	margin-top:33px;
+	margin-left:10px;
+}
+
+div#people div.box div.text div.title {
+	color:#831418;
+	margin-bottom:9px;
+	font-weight:bold;
+}
+
+
+/*
+  root element for the scrollable.
+  when scrolling occurs this element stays still.
+  */
+.scrollable {
+
+    /* required settings */
+    position:relative;
+    overflow:hidden;
+   width:893px;
+	height:274px;
+	margin-top:50px;
+	margin-bottom:56px;
+
+}
+
+/*
+   root element for scrollable items. Must be absolutely positioned
+   and it should have a extremely large width to accomodate scrollable
+   items.  it's enough that you set the width and height for the root
+   element and not for this element.
+*/
+.scrollable .items {
+    /* this cannot be too large */
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+.items div {
+    float:left;
+    width:893px;
+}
+
+/* single scrollable item */
+.scrollable img {
+    float:left;
+	width:69px!important;
+	height:90px!important;
+}
+
+/* active item */
+.scrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+    float:left;
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+    background:url(/media/img/scrollable/arrow/hori_large.png) no-repeat;
+    display:block;
+    width:30px;
+    height:30px;
+    float:left;
+    margin:40px 10px;
+    cursor:pointer;
+    font-size:1px;
+}
+
+/* right */
+a.right { background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover { background-position:-30px -30px; }
+a.right:active { background-position:-60px -30px; }
+
+
+/* left */
+a.left { margin-left: 0px; }
+a.left:hover  { background-position:-30px 0; }
+a.left:active { background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down  {
+    background:url(/media/img/scrollable/arrow/vert_large.png) no-repeat;
+    float: none;
+    margin: 10px 50px;
+}
+
+/* up */
+a.up:hover { background-position:-30px 0; }
+a.up:active { background-position:-60px 0; }
+
+/* down */
+a.down { background-position: 0 -30px; }
+a.down:hover { background-position:-30px -30px; }
+a.down:active { background-position:-60px -30px; }
+
+
+/* disabled navigational button */
+a.disabled {
+    visibility:hidden !important;
+}
+
+div.redbox {
+	float:right;
+	position:relative;
+font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	color:#f5f5f6;
+	font-size:20px;
+	background-color:#831317;
+	width:311px;
+	height:88px;
+	padding-left:15px;
+	padding-top:15px;
+}
+
+
+
+div#bottommsg {
+font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+font-size:19px;
+color:#c5c6c8;
+float:left; 
+width:560px;
+height:110px;
+text-align:right;
+margin-top:10px;
+}
+
+.navi {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif;
+	font-size:10px;
+	color:#686868;
+	border-left:1px solid #831317;
+	height:20px;
+	padding-top:5px;
+}
+
+.navi a {
+	padding-left:5px;	
+}
+
+.navi a.active {
+	font-weight:bold;
+	text-decoration:underline;	
+}
+
+div#rightmenu .scrollable {
+
+    /* required settings */
+    position:relative;
+    overflow:hidden;
+   width:auto;
+	height:180px;
+	clear:both!important;
+	float:none!important;
+
+}
+
+/*
+   root element for scrollable items. Must be absolutely positioned
+   and it should have a extremely large width to accomodate scrollable
+   items.  it's enough that you set the width and height for the root
+   element and not for this element.
+*/
+div#peopleinside .scrollable .items {
+    /* this cannot be too large */
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+div#peopleinside .items div {
+    float:left;
+    width:300px;
+}
+
+div#peopleinside .items ul {
+	list-style:none;
+}
+
+div#peopleinside .items ul li {
+	clear:both;
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	font-size:13px;
+	border:none;
+}
+
+div#peopleinside .items ul li:hover, div#peopleinside .items ul li.active {
+	font-family: "Egy505Lt";
+	font-weight:bold;
+}
+
+/* single scrollable item */
+div#peopleinside .scrollable img {
+    float:left;
+	width:101px!important;
+	height:138px!important;
+}
+
+/* active item */
+div#peopleinside .scrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+
+
+/* this makes it possible to add next button beside scrollable */
+div#peopleinside .scrollable {
+    float:left;
+}
+
+span.seperator {
+	font-family:"myriadproregular", verdana, helvetica, sans-serif; 
+	font-size:9px;
+	color:#831418;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+span.seperator2 {
+	font-family:"myriadproregular", verdana, helvetica, sans-serif; 
+	font-size:9px;
+	color:#831418;
+	padding-left:5px;
+}
+
+span.position {
+	clear:both;
+	font-family: "Egyptian505BT";
+	font-size:12px;
+	line-height:18px;
+}
+
+div#person {
+	position:relative;
+	top:8px;
+	margin-left:25px;
+	width:311px;
+	height:140px;
+}
+
+div.boximg {
+	width:70px;
+	height:90px;
+	background-color:#858688;
+	margin-left:19px;
+	margin-top:-30px;
+	float:left;
+	z-index:100px;
+}
+
+div#person div.text {
+	font-family:"Egy505Lt", verdana, helvetica, sans-serif; 
+	font-size:14px;
+	color:#FFFFFF;
+	margin-top:100px;
+	margin-left:130px;
+
+}
+
+div#person div.text div.title {
+	color:#686868;
+	font-family: "Egyptian505BT";  
+	font-size:15px;
+	margin-bottom:17px;
+}
+
+div.navi div.prev {
+	float:left;
+	margin-right:10px;
+	margin-left:20px;
+}
+
+div.navi div.next {
+	float:right;
+	margin-left:15px;
+}
+
+div.navi div.prev:hover, div.navi div.next:hover, div.navi a:hover, div.navi a.active  {
+	color:#801214;
+}
+
+.margin0 {
+	margin-left:0px!important;	
+}
+
+
+.mainsubmenu {
+	float:left;
+	margin-left:-35px;
+	margin-top:15px;
+	
+}
+
+ul.mainsubmenu li {
+	clear:both!important;
+	border:none!important;
+	margin:0!important;
+	padding:0!important;
+	font-size:13px!important;
+
+	padding-left:10px!important;
+	padding-right:10px!important;
+	color:#686868!important;
+}
+
+div#mainsubmenu1 {
+position:absolute; 
+background-color:#ffffff; 
+/*opacity:0.8; 
+filter:alpha(opacity=80); /* For IE8 and earlier */
+width:auto; 
+height:auto; 
+margin-left:246px; 
+margin-top:35px;
+padding-right:5px;	
+
+z-index:1000;	
+}
+
+
+div#mainsubmenu2 {
+position:absolute; 
+background-color:#ffffff; 
+/*opacity:0.8; 
+filter:alpha(opacity=80); /* For IE8 and earlier */
+width:auto; 
+height:auto; 
+margin-left:323px; 
+margin-top:35px;
+padding-right:5px;
+
+z-index:1000;	
+}
+
+div#mainsubmenu3 {
+position:absolute; 
+background-color:#ffffff; 
+/*opacity:0.8; 
+filter:alpha(opacity=80); /* For IE8 and earlier */
+width:auto; 
+height:auto; 
+margin-left:435px; 
+margin-top:35px;
+padding-right:5px;
+
+z-index:1000;	
+}
+
+div#mainsubmenu4 {
+position:absolute; 
+background-color:#ffffff; 
+/*opacity:0.8; 
+filter:alpha(opacity=80); /* For IE8 and earlier */
+width:auto; 
+height:auto; 
+margin-left:495px; 
+margin-top:35px;
+padding-right:5px;
+
+z-index:1000;		
+}
+
+div#mainsubmenu5 {
+position:absolute; 
+background-color:#ffffff; 
+/*opacity:0.8;
+filter:alpha(opacity=80); /* For IE8 and earlier */
+width:auto; 
+height:auto; 
+margin-left:560px; 
+margin-top:35px;
+padding-right:5px;
+	
+z-index:1000;	
+}
+
+div#mainsubmenu6 {
+position:absolute; 
+background-color:#ffffff; 
+/*opacity:0.8;
+filter:alpha(opacity=80); /* For IE8 and earlier */
+width:auto; 
+height:auto; 
+margin-left:665px; 
+margin-top:35px;
+padding-right:5px;
+	
+z-index:1000;	
+}
+
+div#dnbtn {
+	position:absolute;
+	top:665px;
+	cursor:pointer;		
+}
+
+div#upbtn {
+	position:absolute;
+	top:220px;
+	cursor:pointer;
+}
+
+ul {
+	list-style-type:none;
+}
+ul#ticker {
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	margin-top:-1px;
+}
+
+ul#ticker li {
+	width: 100%;
+	height: 80px;
+	margin-left:-35px;
+	
+}
+
+ul#ticker li a {
+	color: #666;
+}
+
+ul#ticker li span {
+	display: block;
+	color: #06C;
+}
+
+
+div#redline {
+	width:1px;
+	height:270px;
+	background-color:#882224;
+	position:absolute;
+	margin-left:348px;
+}
+
+div#greybox label {
+	color:#686868;	
+}
+
+div#greybox div#msg {
+	color:#882224;	
+}
+
+div#greybox a {
+	text-decoration:none;
+	color:#FFF;
+	font-size:14px;
+	background-color:#882224;
+	height:19px;
+	padding:5px;
+	float:left;
+
+}
+
+div#greybox a.nostyle {
+	text-decoration:none!important;
+	background-color:transparent!important;
+	height:0px!important;
+	padding:0px!important;
+	float:none!important;
+}
+
+div#greybox input {
+	width:215px;
+	height:25px;
+	border:1px solid #882224;
+	margin:0 auto;
+	color:#686868;
+	font-size:12px;
+	float:left;
+			
+}
+
+div#right .h4 {
+	color:#686868;
+	font-family:"Egyptian505BT", verdana, helvetica, sans-serif; 
+	font-size:15px;
+	position:relative;
+	margin-top:80px;
+	margin-left:25px;
+	float:left;
+	text-decoration:none;
+	z-index:100px!important;	
+}
+
+div#rightmenu ul {
+    list-style-type: none;
+    margin-bottom: 40px;
+    margin-left: -30px;
+    margin-top: 0;
+
+}
+
+div#right .h4 a {
+	color:#686868;
+	font-family:"Egyptian505BT", verdana, helvetica, sans-serif; 
+	font-size:15px;
+	text-decoration:none;	
+}
+
+div#right .h4 a:hover, div#right .h4 a.active {
+	font-family:"Egyptian505BT", verdana, helvetica, sans-serif; 
+	color:#882224;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+}
+
+
+
+
